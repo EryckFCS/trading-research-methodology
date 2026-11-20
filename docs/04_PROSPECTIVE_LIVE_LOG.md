@@ -6,9 +6,9 @@ Los resultados en backtest constituyen únicamente hipótesis calibradas. La val
 
 ## 1. Reglas de integridad del registro prospectivo
 
-1. **Línea base congelada:** la configuración vigente en producción Shadow y Demo queda fijada el `19 de noviembre de 2026` bajo la etiqueta privada inmutable `prospective/cft-triple-overlay-v14`.
+1. **Línea base congelada:** la configuración vigente queda fijada el `19 de noviembre de 2026` bajo la etiqueta privada inmutable `prospective/cft-triple-overlay-live-v14.1` con ejecución única reconciliada por libro neto en cuenta Demo UTA.
 2. **Prohibición de edición silenciosa:** durante la ventana de recolección prospectiva no se ajustan pesos de mezcla, umbrales de liquidez ni reglas de salida sobre la marcha; cualquier cambio futuro abre un nuevo ciclo etiquetado desde cero.
-3. **Separación de entorno:** los registros reportados aquí provienen de ejecución en vivo sobre cuenta Demo UTA y corredores Shadow Mark-to-Market con datos reales de mercado. No representan rendimientos con capital real en producción.
+3. **Separación de entorno:** los registros reportados aquí provienen de ejecución en vivo sobre cuenta Demo UTA con reconciliación única del portafolio multi-manga y datos reales de mercado. No representan rendimientos con capital real en producción.
 4. **Métricas normalizadas:** siguiendo el estándar de transparencia sin ostentación de saldos privados, las actualizaciones semanales reportan retorno porcentual sobre base inicial, drawdown máximo porcentual observado, tasa de cumplimiento de compuertas de riesgo y paridad frente a supuestos de fricción.
 
 ---
@@ -17,7 +17,7 @@ Los resultados en backtest constituyen únicamente hipótesis calibradas. La val
 
 | Corte | Fecha UTC | Días acumulados | Retorno neto Demo / Overlay pct | Drawdown máximo pct | Fricción medida o cumplida | Incidencias operativas y estado |
 | :--- | :--- | ---: | :--- | :--- | :--- | :--- |
-| Semana `0` — Inicio congelado | `2026-11-19` | `0` | `0.00%` base congelada | `0.00%` | Gate `< 23 bps` activo | Línea base congelada en `v14.0.0`; rotación limpia a cuenta Demo de partida |
+| Semana `0` — Inicio congelado | `2026-11-20` | `0` | `0.00%` base tras apertura inicial | `0.00%` | Gate `< 23 bps` activo | Línea base congelada en `v14.1.0`; portafolio consolidado reconciliado en vivo sin errores en cuenta Demo UTA |
 
 ---
 
